@@ -47,26 +47,38 @@
 
 <main>
 
-  <section class="hero">
-    <div class="wrap">
-       <div class="hero-grid">
-        <div class="hero-copy">
-      <p class="hero-eyebrow">学文中学校和太鼓部は、プレみや「学文太鼓」へ</p>
-      <h1>互いに高め合い、<br>演奏を創りたい。</h1>
-      <p class="lead">学文太鼓は、学文中学校和太鼓部からバトンを受け継ぎ、『互いに高め合って演奏を創り上げる』
-                      というこれまでの和太鼓部の伝統を大切にした活動を進めていきます。</p>
-      <div class="hero-actions">
-        <a href="newcomers.html" class="btn btn-primary">入会・体験について</a>
-        <a href="philosophy.html" class="btn btn-ghost">活動理念を見る</a>
+  <!-- ▼ トップバナー(スライド) -->
+  <section class="hero-banner-section" aria-label="学文太鼓のご案内">
+    <h1 class="visually-hidden">プレみや「学文太鼓」</h1>
+
+    <div class="hero-banner" data-banner data-interval="6000" role="region" aria-roledescription="カルーセル" aria-label="入会案内バナー">
+      <div class="banner-viewport" aria-live="off">
+        <a class="banner-slide is-active" href="newcomers.html" aria-label="1枚目:入会・体験のご案内ページへ">
+          <img src="学文太鼓_バナー1.png" alt="学文太鼓 バナー1" width="1920" height="1080" fetchpriority="high" decoding="async">
+        </a>
+        <a class="banner-slide" href="newcomers.html" aria-label="2枚目:入会・体験のご案内ページへ" aria-hidden="true">
+          <img src="学文太鼓_バナー2.png" alt="学文太鼓 バナー2" width="1920" height="1080" decoding="async">
+        </a>
+
+        <button type="button" class="banner-arrow prev" aria-label="前のバナーを表示">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="banner-arrow next" aria-label="次のバナーを表示">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7.5 4 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="banner-controls">
+        <button type="button" class="banner-dot is-active" aria-label="1枚目のバナーを表示" aria-current="true"><span class="bar"><span class="fill"></span></span></button>
+        <button type="button" class="banner-dot" aria-label="2枚目のバナーを表示"><span class="bar"><span class="fill"></span></span></button>
+        <button type="button" class="banner-toggle" aria-label="自動切り替えを停止" aria-pressed="false">
+          <svg class="icon-pause" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="2" y="1.5" width="3.4" height="11" rx="1"/><rect x="8.6" y="1.5" width="3.4" height="11" rx="1"/></svg>
+          <svg class="icon-play" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M3.5 1.8v10.4a.6.6 0 0 0 .9.5l8.2-5.2a.6.6 0 0 0 0-1L4.4 1.3a.6.6 0 0 0-.9.5Z"/></svg>
+        </button>
       </div>
     </div>
-    <div class="hero-media">
-          <img src="Drum_stage.JPG" alt="太鼓を打つメンバーの様子">
-          <p class="caption">夏祭りでの演奏の様子</p>
-        </div>
-       </div>
-    </div>
   </section>
+  <!-- ▲ トップバナーここまで -->
 
    <section class="section" style="padding-bottom:64px;">
     <div class="wrap">
